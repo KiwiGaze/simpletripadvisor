@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family:  'Helvetica', 'Arial', sans-serif;
+    font-family:  'Open Sans, 'Arial', sans-serif;
     background-image: url('/bg/desertedbeach.jpg');
     background-size: cover; /* This ensures the image covers the entire page */
     background-position: center;
@@ -51,6 +51,7 @@ body {
 }
 
 header h1 {
+    font-family: 'Roboto Slab', serif; /* Specific font for the header h1 */
     font-size: 1.5em;
     margin-top: 10px;
 }
