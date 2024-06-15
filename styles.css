@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family:  'Roboto', sans-serif;
-    background-image: url('/bg/diageo.jpg');
+    background-image: url('/bg/diego.jpg');
     background-size: cover; /* This ensures the image covers the entire page */
     background-position: center;
     background-repeat: no-repeat; /* Prevents the image from repeating */
@@ -76,7 +76,7 @@ header h1 {
 
 .card {
     background-color: #f8f9fa;
-    border-radius: 8px;
+    border-radius: 20px;
     border: 1px solid #ccc;
     padding: 20px;
     width: 150px;
