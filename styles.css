@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.71); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
     backdrop-filter: blur(10px);
@@ -76,6 +76,9 @@ header h1 {
     width: 150px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.71); /* Semi-transparent white background */
+    backdrop-filter: blur(30px); /* Blur effect */
+    -webkit-backdrop-filter: blur(30px); /* For Safari */
 }
 
 .card p {
