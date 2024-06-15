@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
     backdrop-filter: blur(10px);
@@ -92,7 +92,7 @@ header h1 {
 }
 .card:hover{
     border-color: #007aff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
 }
 
 .card:hover p {
@@ -154,7 +154,7 @@ footer p {
     border-radius: 30px;
     outline: none;
     transition: all 0.3s ease;
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
     transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for focus effects */
