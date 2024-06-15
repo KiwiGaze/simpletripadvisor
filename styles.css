@@ -85,6 +85,7 @@ header h1 {
     background-color: rgba(255, 255, 255, 0.71); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
 }
 .card p {
     margin: 10px 0 0 0;
@@ -92,6 +93,10 @@ header h1 {
 .card:hover{
     border-color: #007aff;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.card:hover p {
+    color: #007aff; /* Change the text color on hover */
 }
 
 .icon {
@@ -152,6 +157,7 @@ footer p {
     background-color: rgba(255, 255, 255, 0.71); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for focus effects */
 }
 
 .search-bar input[type="text"]:focus {
