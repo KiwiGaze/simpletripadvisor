@@ -1,7 +1,10 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #ffffff;
+    background-image: url('/bg/dawnbeach.jpg');
+    background-size: cover; /* This ensures the image covers the entire page */
+    background-position: center;
+    background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     justify-content: center;
     align-items: center;
