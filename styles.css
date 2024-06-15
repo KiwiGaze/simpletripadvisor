@@ -164,3 +164,8 @@ footer p {
 .search-bar button:hover {
     background-color: #0056b3;
 }
+.coming-soon {
+    font-size: 1.2em;
+    color: black;
+    font-style: italic;
+}
