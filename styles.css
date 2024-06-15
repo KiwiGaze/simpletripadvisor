@@ -77,12 +77,11 @@ header h1 {
 .card {
     background-color: #f8f9fa;
     border-radius: 20px;
-    border: 1px solid #ccc;
     padding: 20px;
     width: 150px;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
     backdrop-filter: blur(30px); /* Blur effect */
     -webkit-backdrop-filter: blur(30px); /* For Safari */
     transition: border-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
@@ -92,7 +91,7 @@ header h1 {
 }
 .card:hover{
     border-color: #007aff;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 .card:hover p {
