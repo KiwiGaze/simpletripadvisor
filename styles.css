@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family:  'Open Sans, 'Arial', sans-serif;
+    font-family:  'Arial', sans-serif;
     background-image: url('/bg/desertedbeach.jpg');
     background-size: cover; /* This ensures the image covers the entire page */
     background-position: center;
