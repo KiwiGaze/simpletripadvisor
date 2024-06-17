@@ -3,7 +3,7 @@ body {
     font-family:  'Roboto', sans-serif;
     background-image: url('/bg/diego.jpg');
     background-size: cover; /* This ensures the image covers the entire page */
-    background-position: center;
+    background-position: center; /* Center the background image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     display: flex;
     justify-content: center;
@@ -167,4 +167,17 @@ footer p {
     font-size: 1.2em;
     color: white;
     font-style: italic;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #3498db;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
