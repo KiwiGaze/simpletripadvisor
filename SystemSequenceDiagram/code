@@ -1,0 +1,436 @@
+1. Make Itinerary Plan
+UC-01: Natural Language Interaction
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary AI_System as "AI System"
+
+Traveler -> AI_System: Start conversation with AI (voice/text)
+AI_System -> Traveler: Ask for travel preferences and details
+Traveler -> AI_System: Provide information (voice/text)
+AI_System -> AI_System: Process information and generate plan
+AI_System -> Traveler: Present itinerary plan
+Traveler -> AI_System: Review and confirm plan
+@enduml
+UC-02: AI Dialogues for Planning
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary AI_System as "AI System"
+
+AI_System -> Traveler: Initiate planning dialogue
+AI_System -> Traveler: Ask about travel preferences and requirements
+Traveler -> AI_System: Respond to AI's questions
+AI_System -> AI_System: Process responses and generate itinerary
+AI_System -> Traveler: Present itinerary plan
+Traveler -> AI_System: Review and confirm plan
+@enduml
+2. Customization for Subscribed Users
+UC-03: Activity Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to activity preferences section
+Subscribed_User -> System: Select preferred activities
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-04: Cuisine Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to cuisine preferences section
+Subscribed_User -> System: Select preferred cuisines/dietary restrictions
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-05: Budget Slider
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to budget slider section
+Subscribed_User -> System: Adjust budget slider
+System -> System: Save budget preferences
+System -> Subscribed_User: Update itinerary suggestions with budget
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-06: Personal Interests
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to personal interests section
+Subscribed_User -> System: Select interests (culture, history, arts)
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-07: Financial Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to financial preferences section
+Subscribed_User -> System: Set financial preferences and budget constraints
+System -> System: Save preferences
+System -> Subscribed_User: Generate cost breakdown for itinerary
+Subscribed_User -> System: Review cost breakdown
+@enduml
+UC-08: Travel Companion Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to travel companion preferences section
+Subscribed_User -> System: Select travel companions
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-09: Preferred Pace
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to preferred pace section
+Subscribed_User -> System: Select preferred pace
+System -> System: Save preference
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-10: Weather Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to weather preferences section
+Subscribed_User -> System: Select preferred weather conditions
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-11: Accessibility Needs
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to accessibility needs section
+Subscribed_User -> System: Select accessibility requirements
+System -> System: Save preferences
+System -> Subscribed_User: Update itinerary suggestions
+Subscribed_User -> System: Review updated suggestions
+@enduml
+UC-12: Language Assistance
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to language assistance section
+Subscribed_User -> System: Select language support features
+System -> System: Save preferences
+System -> Subscribed_User: Enable language support features
+Subscribed_User -> System: Access language support features
+@enduml
+UC-13: Sustainability Preferences
+plantuml
+Copy code
+@startuml
+actor Subscribed_User
+boundary System
+
+Subscribed_User -> System: Navigate to sustainability preferences section
+Subscribed_User -> System: Select eco-friendly options
+System -> System: Save preferences
+System -> Subscribed_User: Provide eco-friendly itinerary suggestions
+Subscribed_User -> System: Review eco-friendly suggestions
+@enduml
+3. Export Plan
+UC-14: Calendar Integration
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select calendar integration option
+System -> System: Generate calendar entries from itinerary
+System -> System: Export entries to user’s calendar
+System -> Traveler: Review calendar entries
+@enduml
+UC-15: PDF Export
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select PDF export option
+System -> System: Generate PDF document from itinerary
+System -> System: Download PDF document
+System -> Traveler: Review PDF document
+@enduml
+UC-16: Email Sharing
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select email sharing option
+Traveler -> System: Enter email addresses of recipients
+System -> System: Send itinerary to recipients
+System -> Traveler: Confirmation of email sent
+@enduml
+UC-17: Social Media Sharing
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select social media sharing option
+Traveler -> System: Select social media platform
+System -> System: Share itinerary/highlights on platform
+System -> Traveler: Confirmation of shared content
+@enduml
+UC-18: Offline Access
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select offline access option
+System -> System: Download itinerary
+System -> System: Enable offline access
+Traveler -> System: Review itinerary offline
+@enduml
+UC-19: Interactive Maps
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to export section
+Traveler -> System: Select interactive maps option
+System -> System: Generate interactive maps from itinerary
+System -> System: Include maps in itinerary
+Traveler -> System: Review interactive maps
+@enduml
+4. Online Plaza
+UC-20: Plan Sharing
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to Online Plaza section
+Traveler -> System: Select plan sharing option
+Traveler -> System: Upload customized itinerary
+System -> System: Save itinerary in Online Plaza
+System -> System: Other users access shared plan
+@enduml
+UC-21: Plan Acquisition
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to Online Plaza section
+Traveler -> System: Select browse and search option
+Traveler -> System: Enter search criteria
+System -> System: Display search results
+Traveler -> System: Select suitable plan
+@enduml
+UC-22: User Ratings and Reviews
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to shared plan in Online Plaza
+Traveler -> System: Select rate and review option
+Traveler -> System: Enter rating and write review
+System -> System: Save rating and review
+System -> System: Display feedback with plan
+@enduml
+UC-23: Top Plans and Editors' Picks
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to Online Plaza section
+Traveler -> System: Select top plans and editors' picks option
+System -> System: Display top-rated plans
+System -> System: Highlight editors' picks
+Traveler -> System: View and select plans
+@enduml
+UC-24: Discussion Forums
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to discussion forums section
+Traveler -> System: Select relevant forum or topic
+Traveler -> System: Post questions or feedback
+System -> System: Save and display post
+System -> System: Other users respond and participate
+@enduml
+UC-25: Follow and Connect
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to follow and connect section
+Traveler -> System: Search for contributors or travelers
+Traveler -> System: Follow contributor or send connection request
+System -> System: Save follow or connection request
+System -> Traveler: Confirmation of follow or connection
+@enduml
+5. Feedback and Reviews
+UC-26: Post-Trip Feedback
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to post-trip feedback section
+Traveler -> System: Fill out feedback form
+System -> System: Save feedback
+System -> System: Analyze feedback for improvements
+System -> Traveler: Confirmation of feedback submission
+@enduml
+UC-27: User Reviews
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to review section for activity or accommodation
+Traveler -> System: Select write a review option
+Traveler -> System: Enter rating and write review
+System -> System: Save review
+System -> System: Display review with activity or accommodation
+@enduml
+UC-28: Aggregate Ratings
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to rating section for activity or accommodation
+System -> System: Calculate and display aggregate ratings
+Traveler -> System: View aggregate ratings
+Traveler -> System: Use ratings to make decisions
+@enduml
+UC-29: Review Rewards
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to review section for activity or accommodation
+Traveler -> System: Write and submit detailed review
+System -> System: Save review and grant rewards
+System -> Traveler: Confirmation of rewards
+@enduml
+6. Pre-Designed Templates
+UC-30: Themed Itineraries
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to pre-designed templates section
+Traveler -> System: Select template for specific trip type
+System -> System: Generate itinerary based on template
+Traveler -> System: Customize itinerary as needed
+Traveler -> System: Review and confirm itinerary
+@enduml
+UC-31: Flexible Editing
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to itinerary editing section
+Traveler -> System: Add, remove, or rearrange activities
+System -> System: Save changes to itinerary
+System -> System: Display updated itinerary
+Traveler -> System: Review and confirm changes
+@enduml
+7. Task Management
+UC-32: To-Do Lists
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to task management section
+Traveler -> System: Select create to-do list option
+Traveler -> System: Add pre-trip tasks to list
+System -> System: Save to-do list and tasks
+Traveler -> System: Organize and prioritize tasks
+@enduml
+UC-33: Task Prioritization
+plantuml
+Copy code
+@startuml
+actor Traveler
+boundary System
+
+Traveler -> System: Navigate to task management section
+Traveler -> System: Select prioritize tasks option
+Traveler -> System: Highlight important tasks
+System -> System: Save and display prioritized tasks
+Traveler -> System: Review and confirm prioritized tasks
+@enduml
