@@ -1,0 +1,144 @@
+@startuml
+package SimpleTripAdvisor {
+    
+    abstract class User {
+        + userID: String
+        + name: String
+        + email: String
+        + password: String
+        + addItinerary()
+        + addPreference()
+        + addReview()
+        + addFeedback()
+        + addTask()
+        + addTemplate()
+        + addReward()
+    }
+
+    class FreeUser {
+        + tryLimitedFunctions()
+    }
+
+    class SubscribedUser {
+        + subscription: Subscription
+        + accessAdvancedFeatures()
+    }
+
+    class AdminUser {
+        + manageUsers()
+        + manageContent()
+    }
+
+    User <|-- FreeUser
+    User <|-- SubscribedUser
+    User <|-- AdminUser
+
+    class Itinerary {
+        + itineraryID: String
+        + name: String
+        + startDate: Date
+        + endDate: Date
+        + activities: List<Activity>
+        + accommodations: List<Accommodation>
+        + travelCompanions: List<TravelCompanion>
+        + weather: Weather
+        + sustainabilityOptions: List<SustainabilityOption>
+        + addActivity()
+        + addAccommodation()
+        + addTravelCompanion()
+        + setWeather()
+        + addSustainabilityOption()
+    }
+
+    class Preference {
+        + preferenceID: String
+        + type: String
+        + value: String
+    }
+
+    class Activity {
+        + activityID: String
+        + name: String
+        + description: String
+        + location: String
+    }
+
+    class Accommodation {
+        + accommodationID: String
+        + name: String
+        + description: String
+        + location: String
+    }
+
+    class Review {
+        + reviewID: String
+        + rating: Integer
+        + comment: String
+        + date: Date
+    }
+
+    class Feedback {
+        + feedbackID: String
+        + comment: String
+        + date: Date
+    }
+
+    class Subscription {
+        + subscriptionID: String
+        + type: String
+        + startDate: Date
+        + endDate: Date
+    }
+
+    class TravelCompanion {
+        + companionID: String
+        + name: String
+        + relationship: String
+    }
+
+    class Weather {
+        + weatherID: String
+        + condition: String
+        + temperature: String
+    }
+
+    class Task {
+        + taskID: String
+        + description: String
+        + dueDate: Date
+        + completed: Boolean
+    }
+
+    class Template {
+        + templateID: String
+        + name: String
+        + description: String
+    }
+
+    class Reward {
+        + rewardID: String
+        + type: String
+        + points: Integer
+    }
+
+    class SustainabilityOption {
+        + optionID: String
+        + name: String
+        + description: String
+    }
+
+    User "1" -- "0..*" Itinerary
+    User "1" -- "0..*" Preference
+    Itinerary "1" -- "0..*" Activity
+    Itinerary "1" -- "0..*" Accommodation
+    User "1" -- "0..*" Review
+    User "1" -- "0..*" Feedback
+    SubscribedUser "1" -- "1" Subscription
+    Itinerary "1" -- "0..*" TravelCompanion
+    Itinerary "1" -- "1" Weather
+    User "1" -- "0..*" Task
+    User "1" -- "0..*" Template
+    User "1" -- "0..*" Reward
+    Itinerary "1" -- "0..*" SustainabilityOption
+}
+@enduml
